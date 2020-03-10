@@ -17,31 +17,13 @@ body {background:#fff; font-family: Helvetica-neue, Helvetica, sans-serif;
 
 
 h1 {font-size: 1.6em; color:#333; line-height: 1.5em; font-weight:normal; margin-bottom:1em;}
-h2 {font-size: 10pt; color:#000000;}
-h3 {font-size: 13pt; color:#000000; font-weight:normal; line-height:2px; margin: 30px 0px 1px 0px;}
-h4 {font-size: 11pt; color:#000000;}
-h5 {font-size: 9pt; color:#000000;}
 
-img{border:none;}
-img a{border:none;}
-blockquote{border-left:1px solid #A5ABAB; margin:0px; padding:0 12px 0 12px;}
-
-p{color:#000000; line-height: 1.3em; margin:12px 0;}
+p{color:#000000; line-height: 1.6em; margin:12px 0;}
 
 a {text-decoration: none;}
 a:link {color: #333; text-decoration: none;}
 a:visited {color: #333; text-decoration: none;}
 a:hover {color: #999; text-decoration: none;}
-
-ul{padding: .5em 0em 1em 3.2em;}
-ol{padding: .5em 0em 0em 3.2em;}
-li{line-height: 20px; padding: 6px 0 0 0;}
-
-
-#header {position:fixed; }
-
-#header h2{padding: 0 0 0 0; margin:0; color: #333; font: Helvetica, sans-serif; font-size: 16pt; font-weight: normal;}
-#header h3{padding: 5px 0 20px 0; margin:0; color: #777777; font-weight: normal; font-size: 12pt;}
 
 .entry {
 	border-bottom: #ccc 1px solid;
@@ -53,70 +35,35 @@ li{line-height: 20px; padding: 6px 0 0 0;}
 .entry a:hover {background: #e7eef8; border-width: 0 0 1px 0; border-style: none none solid none; border-color: #C0C0C0; text-decoration: none;}
 .entry strong{font:Arial, Helvetica, sans-serif; font-weight: bold; font-size:1em; color: #555555;}
 
+.inline {
+	display: flex;
+	justify-content: space-between;
+	/* flex-direction: column; */
+}
 
-#footer {background:#fff; clear: both;	width: 32.5em;}
-#footer p{padding:4px 0;margin: 0; color: #666; text-align:left;}
-#footer a{color: #666;text-decoration: none;}
-#footer a:hover{color: #000000;text-decoration: none;}
+.section {
+	margin-bottom: 2em;
+}
 
 
 
 /* for iPad-sized devices */
 @media only screen and (max-device-width: 800px) {
-	.navigation p { font-size: 1em }
-	.subscribe ul {
-	    margin-top: 4em;
-	    font-size: 1.8em;
-	}
-	.footer p { font-size: 1.2em }
-	h2 { font-size: 2.5em }
-	h3 { font-size: 2em }
-	h6 { font-size: 1em }
+	
 	p {
 	    font-size: 1em;
-	    line-height: 1.5em;
-	}
-	.post ul {
-	    font-size: 1em;
-	    line-height: 1em;
-	    padding: .1;
-	}
-	.post ol {
-	    font-size: 1em;
-	    line-height: 1em;
-	    padding: .1;
-	}
-	#arc {
-	    font-size: 1.2em;
+	    line-height: 1.6em;
 	}
 }
 
 /* for narrower browsers */
 @media screen and (max-width: 800px) {
-	.navigation p { font-size: 1em }
-	subscribe ul {
-	    margin-top: 4em;
-	    font-size: 1.6em;
-	    line-height: 1.6em;
-	}
-	.footer p { font-size: 1em }
-	h2 { font-size: 2.5em }
-	h3 { font-size: 2em }
-	h6 { font-size: .8em }
+	
 	p {
 	    font-size: 1em;
-	    line-height: 1.4em;
+	    line-height: 1.6em;
 	}
-	.post ul {
-	    font-size: 1em;
-	    line-height: 1em;
-	    padding: .1;
-	}
-	.post ol {
-	    font-size: 1em;
-	    line-height: 1em;
-	    padding: .1;
-	}
+	
 }
 
 /* for iPhone-sized devices */
@@ -124,32 +71,17 @@ li{line-height: 20px; padding: 6px 0 0 0;}
 #content {max-width: 55em; overflow: hidden; margin: auto;}
 
 	body { padding: 0 }
-	h1 { font-size: 3.5em; margin-bottom: 2em; text-align: left }
-	h2 { font-size: 2em;  margin-bottom: 1.5em; text-align: left }
-	h3 { font-size: 1.8em }
-	h6 { font-size: .9em; text-align: left }
+	h1 { font-size: 2em; text-align: left }
 	p {
-	    font-size: 2.5em;
-	    line-height: 1.4em;
-		margin-bottom: 1.2em;
-	}
-	ul {
-	    list-style-type: disc;
-	    list-style-position: inside;
-	    padding: .5em;
-	}
-	ol {
-	    list-style-position: inside;
-	    padding: .5em;
-	}
-	li {
-	   font-size: 1.7em;
-	   line-height: 1.9em;
-	   margin-top: .3em;
+	    font-size: 1em;
+	    line-height: 1.6em;
+		margin-bottom: 1em;
 	}
 
-	.navigation p { font-size: .8em; margin-top: 1em }
-	.footer p { font-size: .9em }
+	.inline {
+		flex-direction: column;
+	}
+
 }
 
 
