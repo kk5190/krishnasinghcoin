@@ -1,0 +1,26 @@
+- profile:
+  initials: KS
+  name: Krishna Kumar Singh
+  profession: Software Engineer
+  image: images/profile.jpg
+  location: Gurgaon, IN
+  relocation: false
+  company: Promantus India
+  for_hire: true
+  focus: Full Stack Development
+  focus_url: false
+  about: |
+    A Full Stack developer with more than five years of experience in site building, frontend and backend development. Driven to provide excellent service and high-quality coding to create secure and functional sites for clients. Expert in content management systems and up to date on the latest developments and versions.
+  skills:
+    - PHP
+    - JavaScript
+    - HTML / CSS
+  tools:
+    - Drupal
+    - React
+    - Gatsby
+  budget:
+    currency: $
+    min: 5
+    max: 30
+    default: 10

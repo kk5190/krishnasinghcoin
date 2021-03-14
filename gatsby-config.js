@@ -1,34 +1,19 @@
 module.exports = {
-  siteMetadata: {
-    title: `Krishna`,
-    description: `A Personal HomePage`,
-    author: `@kk5190`,
-  },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+    siteMetadata: {
+      description: "Personal page of Krishna Singh",
+      locale: "en",
+      title: "Krishna Kumar Singh",
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+    plugins: [
+      {
+        resolve: "@wkocjan/gatsby-theme-intro",
+        options: {
+          basePath: "/",
+          contentPath: "content/",
+          showThemeLogo: false,
+          theme: "dark-blue",
+        },
       },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
-  ],
-}
+    ],
+  }
+  
