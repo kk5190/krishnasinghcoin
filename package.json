@@ -10,5 +10,12 @@
     "gatsby": "^3.0.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   }
 }
